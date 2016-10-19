@@ -1,7 +1,7 @@
 ---
 layout: curriculum
 title: Making Decisions 
-permalink: /curriculum/making-decisions
+permalink: /docs/curriculum/making-decisions/
 level: easy
 author: jr0cket
 ---

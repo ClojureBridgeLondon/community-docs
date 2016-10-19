@@ -1,7 +1,7 @@
 ---
 layout: curriculum
-title: Curriculum Overview
-permalink: /curriculum/index
+title: Hello World 
+plank: /docs/curriculum/index/
 level: easy
 author: jr0cket
 ---
