@@ -29,6 +29,27 @@ In the above code, change the value of the name `sleepy` to the value `false`.  
 
 
 
+## Excuse Generator
+
+We can create a simple excuses generator that will return a suitable excuse based on the reason we specify.
+
+In this example we are creating a local _name_ using the `let` funciton.  The `let` function assigns the name to the value we specify, in this example the reason we want the excuse for.
+
+The `cond` function returns the answer based on the first matching condition it finds.  Each condition will return either true or false.  The first condition to return true will return its associated answer. 
+
+~~~klipse
+(let [reason "sick"]
+  (cond
+    (= reason "sick")  "I ache all over and am seeing green elephant-shaped spots"
+    (= reason "train") "That darn Southern Rail on strike again"
+    (= reason "pet")   "My pet ate my homework"))
+~~~
+
+In the above code, add some more reasons to the generator.
+
+> Note: This example could have also used the `def` function to assign the name `reason` to the value of the excuse, eg. "sick".  The main difference is that the name assignment only works within the `let` function, meaning that once the closing bracket `)` of the `let` function is reached then the name `reason` can no longer be used. 
+
+
 ## Other decision making functions 
 
 
