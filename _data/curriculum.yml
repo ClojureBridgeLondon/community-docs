@@ -2,6 +2,12 @@
   permalink: /docs/curriculum/index
   todo: true
 
+  # Basics of modelling information in Clojure using the persistent data structures (maps, vectors, lists, etc)
+- title: Who Am I
+  permalink: /docs/curriculum/who-am-i
+  todo: true
+
+  # Conditional logic, predicates and truthiness
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
   todo: true
