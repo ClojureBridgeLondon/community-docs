@@ -50,7 +50,44 @@ In the above code, add some more reasons to the generator.
 > Note: This example could have also used the `def` function to assign the name `reason` to the value of the excuse, eg. "sick".  The main difference is that the name assignment only works within the `let` function, meaning that once the closing bracket `)` of the `let` function is reached then the name `reason` can no longer be used. 
 
 
-## Other decision making functions 
+
+## Bonjour Clojure
+
+In this section we will learn about the function called `case`, which will help us make a decision based on a value.
+
+We joined an international company and we want our code to speak a few different languages.  Lets set the language we want to greet people in and return the appropriate message.
+
+**Try changing the value for greeting to another language.  Add some more language greetings if you like**
+
+~~~klipse
+(let [greeting :fr]
+  (case greeting
+    :fr "bonjour monde clojure"
+    :en "hello clojure world"
+    :it "ciao mondo clojure"
+    :es "hola mundo clojure"))
+~~~
+
+
+Now lets also decide if we want to return the message in uppercase.  We will change our code around a little first though.  We will define a name called language to hold the keyword for the language we want to use.  Then we will define the message we want to return, using the `case` function.  Finally we will decide whether to convert the message to uppercase characters.
+
+**Try changing the value of `upper-case?` to `false` and changing the language value**
+
+~~~klipse
+(let [language :fr
+      message (case language
+                :fr "bonjour monde clojure"
+                :en "hello clojure world"
+                :it "ciao mondo clojure"
+                :es "hola mundo clojure")
+      upper-case? true]
+  (if upper-case?
+    (clojure.string/upper-case message)
+    message))
+~~~
+
+
+## Other decision making functions
 
 
 when
