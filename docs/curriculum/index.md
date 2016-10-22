@@ -1,7 +1,7 @@
 ---
 layout: curriculum
 title: Hello World 
-permalink: /docs/curriculum/index/
+permalink: /docs/curriculum/
 level: easy
 author: jr0cket
 ---

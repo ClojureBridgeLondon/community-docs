@@ -1,5 +1,5 @@
-- title: Hello World
-  permalink: /docs/curriculum/index
+- title: Hello Clojure World
+  permalink: /docs/curriculum/
   todo: true
 
   # Basics of modelling information in Clojure using the persistent data structures (maps, vectors, lists, etc)
