@@ -19,8 +19,18 @@
 <link rel="stylesheet" type="text/css" href="http://app.klipse.tech/css/codemirror.css">
 
 <script>
-    window.klipse_settings = {
-        selector: '.language-klipse'// css selector for the html elements you want to klipsify
-    };
+  window.klipse_settings = {
+    selector: '.language-klipse',
+    codemirror_options_in: {
+      indentUnit: 8,
+      lineWrapping: true,
+      lineNumbers: true,
+      autoCloseBrackets: true
+    },
+    codemirror_options_out: {
+      lineWrapping: true,
+      lineNumbers: true
+    }
+  };
 </script>
 <script src="http://app.klipse.tech/plugin/js/klipse_plugin.js"></script>
