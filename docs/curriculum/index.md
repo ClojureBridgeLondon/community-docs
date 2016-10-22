@@ -1,7 +1,7 @@
 ---
 layout: curriculum
 title: Hello World 
-plank: /docs/curriculum/index/
+permalink: /docs/curriculum/index/
 level: easy
 author: jr0cket
 ---
@@ -21,3 +21,12 @@ Here is a very simple bit of Clojure to get you started.  You can change the cod
 (str "Hello" " " "World")
 ~~~
 
+
+
+# Contributing to Curriculum
+
+## Adding a new section 
+
+Create a new markdown file under docs/curriculum and ensure it has the curriculum layout (or copy an existing markdown file).
+
+To include a new section in the navigation, add the new section to the `_data/curriculum.yml` file.
