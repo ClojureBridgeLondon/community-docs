@@ -11,3 +11,10 @@
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
   todo: true
+
+  # Common Clojure functions and working with maps
+- title: More Than Average
+  permalink: /docs/curriculum/more-than-average
+  todo: true
+
+  # How to split the bill between all the people at a restaurant, start simple and then allow people to pay for just what they ordered
