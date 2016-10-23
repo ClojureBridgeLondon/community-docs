@@ -1,16 +1,31 @@
 ---
 layout: curriculum
-title: Making Decisions 
+title: Who Am I
 permalink: /docs/curriculum/who-am-i
 level: easy
 author: jr0cket
 ---
 
-Lets be a little be narccasistic and represent ourselves in Clojure code 
+Lets be a little introspective and represent ourselves and other groups of things in Clojure code
 
-~~~klipse
+In this section you will learn about collections, such as _string_, _vector_ and _map_.  We will also introduce the following functions for the first time:
+
+* `def` - assign a name to a value (a value being a number, string, collection or function)
+* `str` - join the arguments together to form one string
+* `get`, `get-in` - get values from a collection
+
+<hr>
+
+## So who are you?
+
+We can write a sentence about ourselves as a _string_.  A string is a collection of characters and is always between double quotes `"Your string goes here"`.
+
+Lets look at the simplest possible way you could write some information about yourself
+
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
 "John Stevenson, age 21, height 6ft4, blue eyes, dark and brooding"
-~~~
+</code></pre>
 
 We could also use a Clojure collection to hold lots of values about ourselves.
 
@@ -35,7 +50,7 @@ Another common collection in Clojure is a _map_.  A map is a collection that con
 
 > Note: If you have ever seen a json file you may recognise the similarities in structure
 
-### Exercise 
+### Exercise
 
 Define information about yourself using a _map_, using Clojure _keywords_ as the keys of the map and strings or numbers for the values.
 
@@ -52,7 +67,7 @@ Maps and Vectors can be used to create a much more involved structure to your in
 
 In this example we model someones very extensive Starwars collection.
 
-We have created a map 
+We have created a map
 
 ~~~klipse
 (def starwars-collection
@@ -110,6 +125,8 @@ Using the `get` function we can pull out more specific values from the map.  We 
 
 The key we use to get values from a map is at the top level, ie. it is not nested in another map.  If we want to get a nested value we can use a variation of the `get` function called `get-in`.  The `get-in` function takes the map and a vector of keys.
 
+**Try calling each of the functions at the end of this code snippet**
+
 ~~~klipse
 (def starwars-collection
   {:characters {
@@ -141,6 +158,8 @@ The key we use to get values from a map is at the top level, ie. it is not neste
 In these most recent examples, the keys used in the map have been defined using the Clojure `keyword` type.  A keyword is most commonly used to find values in a collection, especially maps.
 
 You can also use a keyword as a function, instead of the `get` function.  You can also call a map as if it was a function by using a key as an argument to calling the map as a function.
+
+**Try calling each of the functions at the end of this code snippet**
 
 ~~~klipse
 (def starwars-collection
