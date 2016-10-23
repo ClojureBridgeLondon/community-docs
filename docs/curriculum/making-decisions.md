@@ -1,13 +1,22 @@
 ---
 layout: curriculum
-title: Making Decisions 
+title: Making Decisions
 permalink: /docs/curriculum/making-decisions/
 level: easy
 author: jr0cket
 ---
 
-Making decisions is an important part of writing programs
+Making decisions is an common part of writing code, so in this section we will cover functions in Clojure that help us take decisions.
 
+You will be introduced to the following functions for the first time:
+
+* `let` - assign a name to a value (a value being a number, string, collection or function)
+* `str` - join the arguments together to form one string
+* `if`, `cond`, `case`, `when`
+* `for` - loop through values
+* `range` - generate a range of numbers
+
+<hr>
 
 ## Am I sleepy
 
@@ -35,19 +44,21 @@ We can create a simple excuses generator that will return a suitable excuse base
 
 In this example we are creating a local _name_ using the `let` funciton.  The `let` function assigns the name to the value we specify, in this example the reason we want the excuse for.
 
-The `cond` function returns the answer based on the first matching condition it finds.  Each condition will return either true or false.  The first condition to return true will return its associated answer. 
+The `cond` function returns the answer based on the first matching condition it finds.  Each condition will return either true or false.  The first condition to return true will return its associated answer.
 
-~~~klipse
+
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
 (let [reason "sick"]
   (cond
     (= reason "sick")  "I ache all over and am seeing green elephant-shaped spots"
     (= reason "train") "That darn Southern Rail on strike again"
     (= reason "pet")   "My pet ate my homework"))
-~~~
+</code></pre>
 
 In the above code, add some more reasons to the generator.
 
-> Note: This example could have also used the `def` function to assign the name `reason` to the value of the excuse, eg. "sick".  The main difference is that the name assignment only works within the `let` function, meaning that once the closing bracket `)` of the `let` function is reached then the name `reason` can no longer be used. 
+> Note: This example could have also used the `def` function to assign the name `reason` to the value of the excuse, eg. "sick".  The main difference is that the name assignment only works within the `let` function, meaning that once the closing bracket `)` of the `let` function is reached then the name `reason` can no longer be used.
 
 
 
@@ -91,13 +102,13 @@ Now lets also decide if we want to return the message in uppercase.  We will cha
 
 
 when
-cond
 
 
 
 
 
-## Filtering information based on decisions or conditions 
+
+## Filtering information based on decisions or conditions
 
 Decisions are commonly made when processing information
 
@@ -114,7 +125,7 @@ In the above code, try changing the function `odd?` to the function `even?`.
 
 
 
-## A combination lock 
+## A combination lock
 
 You have just bought a new safe too keep all the richest you will gain from becoming a Clojure developer (hopefully).  The safe has a 3 combination lock to protect your new found wealth.
 
@@ -129,9 +140,9 @@ Each tumbler wheel could have all the numbers it contains within a _Collection_ 
 [0 1 2 3 4 5 6 7 8 9]
 ~~~
 
-As the numbers on the tumbler wheel are just a range between 0 and 9, then rather than type out all the numbers we can use the `range` function to generate all the numbers for us.  
+As the numbers on the tumbler wheel are just a range between 0 and 9, then rather than type out all the numbers we can use the `range` function to generate all the numbers for us.
 
-When we give the range function one argument, it will create all the whole numbers from 0 to the number before that of the argument.  In the following example, we give `range` the argument of 10 and we receive the numbers from 0 to 9. 
+When we give the range function one argument, it will create all the whole numbers from 0 to the number before that of the argument.  In the following example, we give `range` the argument of 10 and we receive the numbers from 0 to 9.
 
 ~~~klipse
 (range 10)
@@ -157,15 +168,15 @@ Instead of showing all the possible combinations, count all the combinations and
 
 ~~~klipse
 ;; now count the possible combinations
-(count 
-       
-       
+(count
+
+
          )
 ~~~
 
 To make our lock harder to break into, we should only allow the combinations where each tumbler wheel has a different number.  So you cannot have combinations like 1-1-1, 1-2-2, 1-2-1, etc.
 
-How many combinations does that give us? 
+How many combinations does that give us?
 
 ~~~klipse
 (count (for [,,,     ,,,
@@ -176,4 +187,3 @@ How many combinations does that give us?
                        ,,,)]
          [tumbler-1 ,,,   ,,,]))
 ~~~
-
