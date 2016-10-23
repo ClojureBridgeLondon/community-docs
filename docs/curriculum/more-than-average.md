@@ -8,12 +8,15 @@ author: jr0cket
 
 > FIXME: This section could be written better and made more practical rather than tutorial.  It is meant to be a pre-cursor to split the bill, which is a challenge that uses many of these examples to complete.  I think it probably goes to deep and covers too many functions.
 
-In this section we will get experience with some of the common functions in Clojure.
+In this section we will introduce fuctions that help you work with collections in Clojure.
 
-`get`, `reduce`, `map`, `let` and `partial`.
+* `reduce` - creates a single value from the elements of a collection 
+* `map` - creates a new collection from processing one or more collections
+* `count` - return the total elements in a collection
 
-We will also cover the use of anonymous functions and partial functions, show you how to call functions with multiple arguments if one of those arguments are the elements of a collection.
+We will also cover the use of anonymous functions and the `partial` function, to show how to call functions with multiple arguments if one of those arguments are the elements of a collection.
 
+<hr>
 
 ## Find the average
 
@@ -23,7 +26,7 @@ Lets start with a simple example that takes three angles and works out the avera
 (defn average-simple
   [angle1 angle2 angle3]
   (/ (+ angle1 angle2 angle3) 3))
-  
+
 (average-simple 30 90 50)
 ~~~
 
@@ -75,7 +78,7 @@ For the exercise we use partial with the :angle keyword, which is passed each ma
 ~~~
 
 Now we can get all the values returned in a collection, we need to add them.  If we want to take all the values in a collection and get a single value then you can use the reduce function.
-;; Here we reduce these values by adding them together 
+;; Here we reduce these values by adding them together
 
 ~~~klipse
 (reduce + [30 90 50])
@@ -155,4 +158,3 @@ We can then use `number-of-angles` as the value to divide the total, giving us t
 
 (average [{:angle 30} {:angle 90} {:angle 50}])
 ~~~
-
