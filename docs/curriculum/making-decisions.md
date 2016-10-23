@@ -155,7 +155,7 @@ You can also give `range` two arguments, such as '(range 5 15)'.
 
 ### Create all the Combinations
 
-Complete the following code (replacing the ,,,) to generate all the possible combinations of the lock
+**Complete the following code (replacing the ,,,) to generate all the possible combinations of the lock**
 
 ~~~klipse
 (for [tumbler-1 (range 10)
@@ -165,6 +165,8 @@ Complete the following code (replacing the ,,,) to generate all the possible com
 ~~~
 
 Instead of showing all the possible combinations, count all the combinations and return the total number of combinations
+
+**Take the code from the combinations and wrap it in the count function**
 
 ~~~klipse
 ;; now count the possible combinations
@@ -178,8 +180,12 @@ To make our lock harder to break into, we should only allow the combinations whe
 
 How many combinations does that give us?
 
+**Complete the following code to create a 3-tumbler wheel combination lock, where none of the numbers are the same**
+
+**Beware not to enter (range) without an argument as Clojure may try and evaluate infinity**
+
 ~~~klipse
-(count (for [,,,     ,,,
+(count (for [tumbler-1 (range 10)
              ,,,     ,,,
              ,,,     ,,,
              :when (or (= tumbler-1 tumbler-2)
