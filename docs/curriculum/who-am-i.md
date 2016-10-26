@@ -32,7 +32,7 @@ Lets look at the simplest possible way you could write some information about yo
 
 The function `def` can be used to give a name to something, or more specifically we are defining a name for a value.  For example, you can give a name to a string or number or most other things in Clojure.
 
-Lets define a name that contains a string of our name.  Try defining names for other values too.
+Lets define a name that contains a string of uour name.  Try defining names for other information about yourself (this information doesn't need to be true).
 
 ~~~klipse
 (def my-name "John Stevenson")
@@ -42,13 +42,17 @@ Lets define a name that contains a string of our name.  Try defining names for o
 ;; (def my-group ["Tina" "Belinda" "Harmony"])
 ~~~
 
+> Any names you define here can be used with any other code further down the page
+
+
 To get the value of a name you can simply use the name in your code
 
-~~~klipse
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
 my-name
 
-;; my-age
-~~~
+;; my-preferred-age
+</code></pre>
 
 Its much more common to use the name with a function though
 
@@ -80,19 +84,20 @@ Once of the disadvantages of a _vector_ is ambiguity.  Just by looking at the ve
 For example, we can infer that "John" and "Stevenson" are probably the persons first and last names.  However, is this person's age 37 or is it 12.  If that person is aged 37 then what does the 12 represent.  Is it they years they have lived in London, is it the age they left North Yorkshire or is it simply their shoe size
 
 
-~~~klipse
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
 (def my-details ["John" "Stevenson" "37" "Clojure" "London" "North Yorkshire" 12])
-~~~
+</code></pre>
+
 
 As we already defined `my-name` as a name that points to my full name, we can use `my-name` as part of the collection for `my-details`
 
-~~~klipse
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
 (def my-details [my-name "37" "Clojure" "London" "North Yorkshire" 12])
-~~~
-
+</code></pre>
 
 > Hint: Any names we define in this page will be available to any sections of code after the definition of that name.
-
 
 
 ### Examples of Collections
@@ -141,7 +146,7 @@ In this little exercise, we would like to send a letter a letter to a person who
 Another common collection in Clojure is a _map_.  A map is a collection that contains pairs of keys and values.  The keys allow you to look up the values in a map.
 
 ~~~klipse
-{"key" "value}
+{"key" "value"}
 
 ;; {1 "air" 2 "light" 3 "heat"}
 
@@ -191,13 +196,17 @@ We can also include collections as elements in a collection.
 ;; {:bicycle ["wheels" "frame" "handlbars"]}
 ~~~
 
+### Exercise: Making a meal of it
+
+Lets create a collection that represents a meal as an example of a more complex thing.
+
 Imagine our meal is made up of a starter, main course and dessert.  How could we represent that?
 
 ~~~klipse
 {}
 ~~~
 
-Now we want to define what makes up each part of the meal.  So how do we show what we have for the starter, main course and dessert?
+Now we want to define what makes up each part of the meal.  So how do we define what we have for the starter (eg. soup, bread), main course (eg. fish and chips) and dessert (eg. cheese & wine)?
 
 ~~~klipse
 {}
@@ -210,14 +219,13 @@ Once you have finished these exercises, take a look at the [suggested answers](h
 
 Maps and Vectors can be used to create a much more involved structure to your information, allowing you to represent much more complex things.
 
-In this example we model someones very extensive Starwars collection.
+In this example we model someones very extensive Star Wars collection.
 
-We have created a map
+> FIXME:  Make a simpler starwars collection as and example then create ask the students to create something more invovled as an exercise in a challenge section
 
 ~~~klipse
 (def starwars-collection
-  {:characters {
-                :jedi   ["Luke Skywalker"
+  {:characters {:jedi   ["Luke Skywalker"
                          "Obiwan Kenobi"
                          "Quigon Gin"
                          "Rey"]
@@ -226,18 +234,22 @@ We have created a map
                 :droids ["C3P0"
                          "R2D2"
                          "BB-8"]}
-   :ships {
-           :rebel-alliance  ["Millenium Falcon"
+   :ships {:rebel-alliance  ["Millenium Falcon"
                              "X-wing fighter"]
            :imperial-empire ["Death Star"
                              "Intergalactic Cruiser"
                              "Star Destroyer"
                              "TIE Fighter"
                              "Lambda-class Shuttle"]}})
-
-;; By typing the name assigned to our map, the map will be returned as the result
-starwars-collection
 ~~~
+
+By typing the name assigned to our map, the map will be returned as the result
+
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
+starwars-collection
+</code></pre>
+
 
 Using the `get` function we can pull out more specific values from the map.  We give the `get` function the map we want to extract a value from and the key that is paired with the value.
 
@@ -269,7 +281,7 @@ You can also call a map as if it was a function by using a key as an argument to
 **Try calling each of the functions at the end of this code snippet**
 
 ~~~klipse
-; (starwars-collection :characters)
+(starwars-collection :characters)
 ;; (:characters starwars-collection)
 
 ;; (:sith (starwars-collection :characters))
