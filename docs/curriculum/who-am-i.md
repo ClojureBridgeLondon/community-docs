@@ -12,7 +12,7 @@ In this section you will learn about collections, such as _string_, _vector_ and
 
 * `def` - assign a name to a value (a value being a number, string, collection or function)
 * `str` - join the arguments together to form one string
-* `get`, `get-in` - get values from a collection
+* `first`, `second`, `last`, `rest`, `get`, `get-in` - get values from a collection
 
 <hr>
 
