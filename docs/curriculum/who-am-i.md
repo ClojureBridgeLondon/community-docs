@@ -27,6 +27,42 @@ Lets look at the simplest possible way you could write some information about yo
 "John Stevenson, age 21, height 6ft4, blue eyes, dark and brooding"
 </code></pre>
 
+
+## Naming Things with `def`
+
+The function `def` can be used to give a name to something, or more specifically we are defining a name for a value.  For example, you can give a name to a string or number or most other things in Clojure.
+
+Lets define a name that contains a string of our name.  Try defining names for other values too.
+
+~~~klipse
+(def my-name "John Stevenson")
+
+;; (def my-preferred-age 25)
+;; (def favourite-language "Clojure")
+;; (def my-group ["Tina" "Belinda" "Harmony"])
+~~~
+
+To get the value of a name you can simply use the name in your code
+
+~~~klipse
+my-name
+
+;; my-age
+~~~
+
+Its much more common to use the name with a function though
+
+~~~klipse
+(str my-name " is enjoying coding in Clojure")
+~~~
+
+Giving a name to something allows you to easily use that thing elsewhere in your code.  The name can be used instead of typing out the value in multiple places.  If you want to change the value used throughout your code, then you only need to change your code in one place.
+
+
+## Grouping things together in a Collection
+
+So going back to defining ourselves, how can we can give a name to all our details ?
+
 We could also use a Clojure collection to hold lots of values about ourselves.
 
 Using the square brackets,`[ ]` represents a _vector_ in Clojure.  A _vector_ is a very flexible box you can put any kind of _values_ in (strings, numbers, characters, function calls, names, true, false, keywords).
