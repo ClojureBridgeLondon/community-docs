@@ -23,3 +23,10 @@
   todo: true
 
 
+  # Find the most common word from a source of text (eg. works of shakespear, hhgttg)
+- title: Challenge - Most Common Word
+  permalink: /docs/curriculum/most-common-word
+  todo: true
+
+  # Introducing mutable state
+
