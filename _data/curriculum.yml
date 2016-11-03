@@ -2,11 +2,17 @@
   permalink: /docs/curriculum/
   todo: true
 
-  # Basics of modelling information in Clojure using the persistent data structures (maps, vectors, lists, etc)
+  # Basics of modelling information in Clojure using strings
 - title: Who Am I
   permalink: /docs/curriculum/who-am-i
   todo: true
 
+  # Introducing the basics of Clojure Collections
+- title: Reference: Clojure Collections Introduction
+  permalink: /docs/curriculum/clojure-collections
+  todo: true
+
+    # Basics of modelling information in Clojure using strings
   # Conditional logic, predicates and truthiness
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
