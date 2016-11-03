@@ -8,7 +8,7 @@
   todo: true
 
   # Introducing the basics of Clojure Collections
-- title: Reference: Clojure Collections Introduction
+- title: Reference Clojure Collections Introduction
   permalink: /docs/curriculum/clojure-collections
   todo: true
 
@@ -17,20 +17,18 @@
   permalink: /docs/curriculum/who-am-i-in-detail
   todo: true
 
-## put a seperate section here on collections ???
-
   # Basics of modeling Clojure using the persistent data structures (vectors)
 - title: Who Are We
   permalink: /docs/curriculum/who-are-we
   todo: true
 
   # Defining slightly more complex collections - collections within collections
-- title: Challenge: Making a Meal of It
+- title: Challenge Making a Meal of It
   permalink: /docs/curriculum/making-a-meal-of-it
   todo: true
 
   # Defining a meal and recipe to demonstrate how to use collections within collections
-- title: Challenge: Great Clojure Bake-off
+- title: Challenge Great Clojure Bake-off
   permalink: /docs/curriculum/great-clojure-bake-off
   todo: true
 
@@ -50,6 +48,15 @@
   permalink: /docs/curriculum/split-the-bill
   todo: true
 
+  # Intermediate examples of Clojure functions and working with maps
+- title: More Than Average
+  permalink: /docs/curriculum/more-than-average
+  todo: true
+
+  # Finding patterns in collections (pre-cursor to most common word challenge)
+- title: Finding Patterns
+  permalink: /docs/curriculum/finding-patterns
+  todo: true
 
   # Find the most common word from a source of text (eg. works of shakespear, hhgttg)
 - title: Challenge - Most Common Word
