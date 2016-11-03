@@ -1,4 +1,4 @@
-#---
+---
 layout: curriculum
 title: Great Clojure Bake Off
 permalink: /docs/curriculum/great-clojure-bake-off
