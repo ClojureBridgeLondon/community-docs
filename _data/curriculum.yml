@@ -13,6 +13,11 @@
   todo: true
 
     # Basics of modelling information in Clojure using strings
+- title: Who Am I In Detail
+  permalink: /docs/curriculum/who-am-i-in-detail
+  todo: true
+
+## put a seperate section here on collections ???
   # Conditional logic, predicates and truthiness
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
