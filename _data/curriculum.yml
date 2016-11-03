@@ -30,6 +30,11 @@
   todo: true
 
   # Defining a meal and recipe to demonstrate how to use collections within collections
+- title: Challenge: Great Clojure Bake-off
+  permalink: /docs/curriculum/great-clojure-bake-off
+  todo: true
+
+  # Getting data from more complex collections
   # Conditional logic, predicates and truthiness
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
