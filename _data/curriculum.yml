@@ -43,8 +43,8 @@
   todo: true
 
   # The basics of mathematical functions in Clojure
-- title: The Numbers Add Up
-  permalink: /docs/curriculum/the-numbers-add-up
+- title: The Numbers Do Add Up
+  permalink: /docs/curriculum/the-numbers-do-add-up
   todo: true
 
  # The basics of working with data in collections, preparing for split-the-bill challenge

@@ -1,7 +1,7 @@
 ---
 layout: curriculum
-title: The Numbers Add Up
-permalink: /docs/curriculum/the-numbers-add-up
+title: The Numbers Do Add Up
+permalink: /docs/curriculum/the-numbers-do-add-up
 level: easy
 author: jr0cket
 ---
