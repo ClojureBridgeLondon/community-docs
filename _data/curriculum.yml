@@ -18,6 +18,13 @@
   todo: true
 
 ## put a seperate section here on collections ???
+
+  # Basics of modeling Clojure using the persistent data structures (vectors)
+- title: Who Are We
+  permalink: /docs/curriculum/who-are-we
+  todo: true
+
+  # Defining slightly more complex collections - collections within collections
   # Conditional logic, predicates and truthiness
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
