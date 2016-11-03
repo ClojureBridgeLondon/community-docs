@@ -42,7 +42,12 @@
   permalink: /docs/curriculum/making-decisions
   todo: true
 
-  # The basics of working with data in collections, preparing for split-the-bill challenge
+  # The basics of mathematical functions in Clojure
+- title: The Numbers Add Up
+  permalink: /docs/curriculum/the-numbers-add-up
+  todo: true
+
+ # The basics of working with data in collections, preparing for split-the-bill challenge
 - title: Finding Averages
   permalink: /docs/curriculum/finding-averages
   todo: true
