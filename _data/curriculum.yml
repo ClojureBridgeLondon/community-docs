@@ -25,6 +25,11 @@
   todo: true
 
   # Defining slightly more complex collections - collections within collections
+- title: Challenge: Making a Meal of It
+  permalink: /docs/curriculum/making-a-meal-of-it
+  todo: true
+
+  # Defining a meal and recipe to demonstrate how to use collections within collections
   # Conditional logic, predicates and truthiness
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
