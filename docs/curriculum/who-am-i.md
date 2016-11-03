@@ -14,7 +14,7 @@ In this section you will learn about collections, such as _string_, _vector_ and
 * `str` - join the arguments together to form one string
 * `first`, `second`, `last`, `rest`, `get`, `get-in` - get values from a collection
 
-<hr>
+<hr />
 
 ## So who are you?
 
@@ -180,112 +180,5 @@ Remember that a valid map must have a key and a value as a pair.  You can have m
 {:firstname "John" ,,, ,,,}
 ~~~
 
+> FIXME: Split into another section - Making a meal of it
 
-
-## Describing more complex things
-
-We have represented ourselves as a fairly simple structure, just as a collection of values, mainly strings and numbers.
-
-We can also include collections as elements in a collection.
-
-~~~klipse
-["my-friends" ["Kerry" "Chris" "Abby"]]
-
-;; {:types-of-pet ["cat" "dog" "tropical fish" "rabbit"] }
-
-;; {:bicycle ["wheels" "frame" "handlbars"]}
-~~~
-
-### Exercise: Making a meal of it
-
-Lets create a collection that represents a meal as an example of a more complex thing.
-
-Imagine our meal is made up of a starter, main course and dessert.  How could we represent that?
-
-~~~klipse
-{}
-~~~
-
-Now we want to define what makes up each part of the meal.  So how do we define what we have for the starter (eg. soup, bread), main course (eg. fish and chips) and dessert (eg. cheese & wine)?
-
-~~~klipse
-{}
-~~~
-
-Once you have finished these exercises, take a look at the [suggested answers](https://gist.github.com/f0bae2a5bd4e92a3db4d6e51246c3dfe)
-
-
-## Finding information in maps
-
-Maps and Vectors can be used to create a much more involved structure to your information, allowing you to represent much more complex things.
-
-In this example we model someones very extensive Star Wars collection.
-
-> FIXME:  Make a simpler starwars collection as and example then create ask the students to create something more invovled as an exercise in a challenge section
-
-~~~klipse
-(def starwars-collection
-  {:characters {:jedi   ["Luke Skywalker"
-                         "Obiwan Kenobi"
-                         "Quigon Gin"
-                         "Rey"]
-                :sith   ["Darth Vader"
-                         "Darth Sideous"]
-                :droids ["C3P0"
-                         "R2D2"
-                         "BB-8"]}
-   :ships {:rebel-alliance  ["Millenium Falcon"
-                             "X-wing fighter"]
-           :imperial-empire ["Death Star"
-                             "Intergalactic Cruiser"
-                             "Star Destroyer"
-                             "TIE Fighter"
-                             "Lambda-class Shuttle"]}})
-~~~
-
-By typing the name assigned to our map, the map will be returned as the result
-
-<!-- Using expression evaluation fix to make string appear as a value in klipse -->
-<pre><code class="language-klipse" data-eval-context="expr">
-starwars-collection
-</code></pre>
-
-
-Using the `get` function we can pull out more specific values from the map.  We give the `get` function the map we want to extract a value from and the key that is paired with the value.
-
-
-~~~klipse
-(get starwars-collection :characters)
-~~~
-
-
-The key we use to get values from a map is at the top level, ie. it is not nested in another map.  If we want to get a nested value we can use a variation of the `get` function called `get-in`.  The `get-in` function takes the map and a vector of keys.
-
-**Evaluate each of the functions by un-commenting them in turn**
-
-~~~klipse
-(get-in starwars-collection [:characters :jedi])
-
-;; (get-in starwars-collection [:ships :rebel-alliance])
-~~~
-
-
-## A little short-cut with keywords
-
-In these most recent examples, the keys used in the map have been defined using the Clojure `keyword` type.  A keyword is most commonly used to find values in a collection, especially maps.
-
-You can also use a keyword as a function, instead of the `get` function.
-
-You can also call a map as if it was a function by using a key as an argument to calling the map as a function.
-
-**Try calling each of the functions at the end of this code snippet**
-
-~~~klipse
-(starwars-collection :characters)
-;; (:characters starwars-collection)
-
-;; (:sith (starwars-collection :characters))
-;; ((starwars-collection :characters) :sith)
-~~~
-
-If you dont get the use of maps and keywords like this, dont worry.  Just try to see that this is a short-hand version of the `(get map keyword)` function call.
