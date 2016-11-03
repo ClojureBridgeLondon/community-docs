@@ -1,6 +1,6 @@
 #---
 layout: curriculum
-title: Challenge: Great Clojure Bake-off
+title: Great Clojure Bake Off
 permalink: /docs/curriculum/great-clojure-bake-off
 level: easy
 author: jr0cket

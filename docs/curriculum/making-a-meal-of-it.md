@@ -1,6 +1,6 @@
 #---
 layout: curriculum
-title: Challenge: Making a Meal of It
+title: Making a Meal of It
 permalink: /docs/curriculum/making-a-meal-of-it
 level: easy
 author: jr0cket
@@ -29,3 +29,6 @@ We can also include collections as elements in a collection.
 
 ;; {:bicycle ["wheels" "frame" "handlbars"]}
 ~~~
+
+> FIXME: add more examples and a small exercise.  beware of making it too much like the Great Clojure bake-off
+

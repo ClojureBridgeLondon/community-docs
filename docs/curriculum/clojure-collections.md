@@ -1,6 +1,6 @@
 ---
 layout: curriculum
-title: Reference: Clojure Collections Introduction
+title: Clojure Collections Introduction
 permalink: /docs/curriculum/clojure-collections
 level: easy
 author: jr0cket
