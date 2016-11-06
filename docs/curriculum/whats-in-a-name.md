@@ -29,7 +29,7 @@ The function `def` can be used to give a name to something, or more specifically
 (def my-name "John Stevenson")
 </code></pre>
 
-> Any names you define here can be used with any other code further down the page
+> Once you define a name on a page, that name can be used with any other code on the same page
 
 
 ## Using names
@@ -42,7 +42,7 @@ my-name
 </code></pre>
 
 
-## Define some names for other things
+## Define names for other things
 
 You can define names for many things in your code.  By giving a name to something, it makes it very easy to use those things elsewhere in your code just by using the name.
 
@@ -60,7 +60,7 @@ Using the `def` function to give a name to something means that you only need to
 
 ## The `str` function
 
-The `str` function is used to join strings together, returning a new string as the result.  The `str` funciton can also be used to join other values, such as numbers, where those numbers are made part of the new string that is returned
+The `str` function is used to join strings together, returning a new string as the result.  The `str` function can also be used to join other values, such as numbers, where those numbers are made part of the new string that is returned
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
