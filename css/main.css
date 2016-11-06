@@ -14,8 +14,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 
@@ -45,8 +44,8 @@ a:visited { color: #a0a; }
 
 .posts span {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 90%;
 }
 
 /*****************************************************************************/
