@@ -5,6 +5,11 @@
   # Basics of modelling information in Clojure using strings
 - title: Who Am I
   permalink: /docs/curriculum/who-am-i
+  todo: false
+
+  # Basics of modelling information in Clojure using strings
+- title: What's In A Name
+  permalink: /docs/curriculum/whats-in-a-name
   todo: true
 
   # Introducing the basics of Clojure Collections
