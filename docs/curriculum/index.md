@@ -15,16 +15,25 @@ Existing developers may go through this content more quickly, especially in the 
 
 # Hello Clojure World
 
-Here is a very simple bit of Clojure to get you started.  You can change the code and as you do so the result of the code changes underneath...
+Here is a very simple bit of Clojure to get you started.  You can change the code in the top row and as you do so the result of the code changes underneath...
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
 (str "Hello" " " "World")
 </code></pre>
 
-You do not have to use a Clojure aware editor to complete this curriculum, however you may find it useful to copy code into an editor for further reference or experimentation.
 
-The ability to run you code like this is thanks to a Clojurescript project called [Klipse](https://github.com/viebel/klipse).  Clojurescript is the Clojure language turned into Javascript and run in the browser to create interactive apps and webpages such as this one.
+## The Clojure REPL
+
+The code section above is an example of a Clojure REPL.  A REPL is a way to run Clojure code, either as full program or just specific lines of code.
+
+You can write any Clojure code in the REPL get instant feedback on what that code does.
+
+![Clojure REPL in action (Klipse)](https://raw.githubusercontent.com/viebel/klipse/master/images/clojure-snippet.gif)
+
+You can complete this curriculum using the REPL in these web pages, however you may find it useful to copy code into an editor for further reference or experimentation.
+
+> The ability to run you code like this is thanks to a Clojurescript project called [Klipse](https://github.com/viebel/klipse).  Clojurescript is the Clojure language turned into Javascript and run in the browser to create interactive apps and webpages such as this one.
 
 
 # Why Clojure?
