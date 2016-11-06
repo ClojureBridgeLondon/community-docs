@@ -23,6 +23,12 @@ Lets look at the simplest possible way you could write some information about yo
 "John Stevenson, age 21, height 6ft4, blue eyes, dark and brooding"
 </code></pre>
 
+**Write a brief description of yourself (it can be made up)**
+
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
+""
+</code></pre>
 
 ## So What is a String?
 
@@ -34,6 +40,6 @@ Strings are used in code for things like peoples names and other non-numerical i
 
 In the financial world, strings may be used to keep records of transactions, combining to create a history of all the transactions that month on a bank statement.
 
-Strings are also commonly used to keep a log of what your code is doing, especially when there are errors occurring.
+Strings are also commonly used to keep a log of what your code is doing, especially when there are errors occurring.  A very basic way to debug your code is to print out error messages as strings.
 
 > Technical Note: A string is a type and in Clojure that type is `java.lang.String`.  Strings in Java are immutable (cannot be changed when created) so it makes sense to use the Java String type than create a specific one for Clojure.
