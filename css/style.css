@@ -17,3 +17,25 @@
 .document {
     margin-top: 20px;
 }
+
+
+/* Adding Ubuntu Font styles, from Google Web Font includes in head.html */
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Ubuntu', sans-serif;
+}
+
+pre {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.08em;
+  margin-bottom: 2em;
+}
+
+blockquote p {
+  font-size: 0.96em;
+  font-style: italic;
+}
