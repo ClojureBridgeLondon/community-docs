@@ -47,6 +47,11 @@
   permalink: /docs/curriculum/changing-who-you-are
   todo: true
 
+  # Looking up data held in maps
+- title: Looking up data in Maps
+  permalink: /docs/curriculum/looking-up-data-in-maps
+  todo: true
+
   # Conditional logic, predicates and truthiness
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
