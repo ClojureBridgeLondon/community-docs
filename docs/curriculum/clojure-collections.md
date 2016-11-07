@@ -1,6 +1,6 @@
 ---
 layout: curriculum
-title: Clojure Collections Introduction
+title: Collections Overview
 permalink: /docs/curriculum/clojure-collections
 level: easy
 author: jr0cket
@@ -12,19 +12,13 @@ Put simply, a collection is a box of things, where the things can be anything yo
 
 In this section you will learn about some of the collections available in Clojure that help you group things together.
 
-We will also introduce the following functions for the first time:
-
-* `first`, `second`, `last`, `rest`, `get`, `get-in` - get values from a collection
-
-> Remember:  If you want to use a collection you define later on in the page then give that collection aname using the function `def`.  Then you can work with that collection just by using its name.
-
 <hr />
 
-## Reference: Collections in Clojure 
+## Reference: Collections in Clojure
 
 We have already seen a String in the previous section.  This is a very simple form of collection which can only contain characters.
 
-There are 4 other collections that are very useful within Clojure 
+There are 4 other collections that are very useful within Clojure
 
 | Collection name | Notation | Description                                                                                                                                                |
 |-----------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -43,3 +37,6 @@ A collection is often made up of similar things or things that are related to ea
 
 Collections in Clojure can contain any valid Clojure value or expression (`"string"`, `99`, `3/4`, `(str "function call")`).
 
+## Differences between Collections
+
+In almost all contexts, you can consider vectors, lists, and other sequences as interchangeable. They only differ in their performance characteristics, and in a few data-structure-specific operations.
