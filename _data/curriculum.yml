@@ -57,6 +57,11 @@
   permalink: /docs/curriculum/making-decisions
   todo: true
 
+ # The basics of defining your own functions
+- title: On Your Best Behaviour
+  permalink: /docs/curriculum/on-your-best-behaviour
+  todo: true
+
   # The basics of mathematical functions in Clojure
 - title: The Numbers Do Add Up
   permalink: /docs/curriculum/the-numbers-do-add-up

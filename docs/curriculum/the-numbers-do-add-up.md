@@ -12,7 +12,7 @@ We can change things in many ways in Clojure, however most of the time it looks 
 
 We will also introduce the following functions for the first time:
 
-* `defn` - assign a name to a function
+| `+`, `-`, `*`, `/`, `<`, `>` | basic arithmetic functions                       |
 
 <hr />
 
@@ -25,9 +25,12 @@ Lets do some simple math
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
-(+ 1 2)
+(+ 1 2 3)
 </code></pre>
 
+> Note: You can call a mathematical function with one or more arguments
+
+**Try out some simple maths** 
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
@@ -41,45 +44,11 @@ Lets do some simple math
 </code></pre>
 
 
+## Prefix notation
 
-## Creating simple math functions
+You have seen lots of examples of prefix notation in Clojure so far.  In fact all of Clojure uses prefix notation.
 
-Lets take a simple maths sum, `(+ 1 10)`.  This will add the number `10` to the number `1`, giving the result of `11`.  We have not changed the value of 10 or of 1, instead we created a new value.
-
-If we wanted to add `10` to lots of different numbers, then we can create a function to do this
-
-<!-- Using expression evaluation fix to make string appear as a value in klipse -->
-<pre><code class="language-klipse" data-eval-context="expr">
-((fn [number] (+ number 10)) 6)
-</code></pre>
-
-We create our own function by calling the `fn` function.  The arguments to that function (if there are any) are put into a vector `[ ]`.  Then the behaviour of that function is defined, typically a call to one or more other functions that use the argument.
+Prefix notation means that the function comes first, followed by all the arguments.  The function is a pre-cursor to the data the function is going to work on.
 
 
-
-<!-- Using expression evaluation fix to make string appear as a value in klipse -->
-<pre><code class="language-klipse" data-eval-context="expr">
-(defn add-ten
-  []
-    (+ 1 10))
-</code></pre>
-
-Now we can add an _argument_ to the function.  This allows us to add 10 to a different number each time we call the function.
-
-<!-- Using expression evaluation fix to make string appear as a value in klipse -->
-<pre><code class="language-klipse" data-eval-context="expr">
-(defn add-ten
-  [number]
-    (+ number 10))
-
-(add-ten 3)
-</code></pre>
-
-
-
-<!-- Using expression evaluation fix to make string appear as a value in klipse -->
-<pre><code class="language-klipse" data-eval-context="expr">
-(defn add-two-numbers
-  [number-one number-two]
-    (+ number-one number-two))
-</code></pre>
+> FIXME: add some more mathematical examples
