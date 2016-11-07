@@ -22,10 +22,10 @@ There are 4 other collections that are very useful within Clojure
 
 | Collection name | Notation | Description                                                                                                                                                |
 |-----------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| List            | `()`      | A list of things that are accessed one after another (linked list).  The first element of a list is a function call unless wrapped by the `quote` function |
-| Vector          | `[]`      | A group of things that can be access by there position in the collection (indexed array)                                                                   |
-| Map             | `{}`      | One or more pairs of keys and values (hash map).  Keys are used to find specific values                                                                    |
-| Set             | `#{}`     | A unique collection of things.  No two things can be identical                                                                                             |
+| List            | `()`     | A list of things that are accessed one after another (linked list).  The first element of a list is a function call unless wrapped by the `quote` function |
+| Vector          | `[]`     | A group of things that can be access by there position in the collection (indexed array)                                                                   |
+| Map             | `{}`     | One or more pairs of keys and values (hash map).  Keys are used to find specific values                                                                    |
+| Set             | `#{}`    | A unique collection of things.  No two things can be identical                                                                                             |
 
 ### Examples of Collections
 
@@ -36,6 +36,15 @@ Examples of collections in your life could be your CD collection, your Spotify l
 A collection is often made up of similar things or things that are related to each other in some way.  In some languages collections contain the same types of things, whereas Clojure collections can contain anything, just like cardboard boxes packed in a hurry on the day you move house.
 
 Collections in Clojure can contain any valid Clojure value or expression (`"string"`, `99`, `3/4`, `(str "function call")`).
+
+
+## Common functions for Collections
+
+There are several functions that help you get information out of collections and these functions work on all the different types of collections.
+
+The functions `first`, `second`, `next`, `last`, `rest`,`nth` all return a value at a given place in the collection.
+
+The functions `get` and `get-in` will get value that are paired with the given value.  We will see more of this when using map collections.
 
 ## Differences between Collections
 
