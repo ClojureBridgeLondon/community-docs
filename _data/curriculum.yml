@@ -8,7 +8,7 @@
   todo: false
 
   # Basics of modelling information in Clojure using strings
-- title: What's In A Name
+- title: Whats In A Name
   permalink: /docs/curriculum/whats-in-a-name
   todo: true
 
@@ -20,6 +20,11 @@
     # Basics of modelling information in Clojure using strings
 - title: Who Am I In Detail
   permalink: /docs/curriculum/who-am-i-in-detail
+  todo: true
+
+  # Collection - vector
+- title: Collection - Vector
+  permalink: /docs/curriculum/collection-vector
   todo: true
 
   # Basics of modeling Clojure using the persistent data structures (vectors)
