@@ -16,7 +16,7 @@ You will be introduced to the following functions for the first time:
 * `for` - loop through values
 * `range` - generate a range of numbers
 
-<hr>
+<hr />
 
 ## Am I sleepy
 
@@ -97,13 +97,49 @@ Now lets also decide if we want to return the message in uppercase.  We will cha
     message))
 ~~~
 
+## Filtering information
+
+Another form of decision making is to filter information to only return those parts you are interested in, based on some kind of criteria.  A simple example of this is to return all the even numbers from a collection
+
+~~~klipse
+(filter even? (range 10))
+~~~
+
+There are several functions you can use to filter values, such as `odd?`, `even?`, `true?`, `false?`, `string?`, `integer?`
+
+
 
 ## Other decision making functions
 
 
-when
+
+### When
+
+~~~klipse
+(when (> 3 2)
+      "Higher")
+~~~
 
 
+### While
+
+> FIXME: needs a better example
+
+    (while test & body)
+
+Repeatedly executes body while test expression is true. Presumes
+some side-effect will cause test to become false/nil. Returns nil
+
+
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
+
+;; a var to be used for its side effects
+(def a (atom 10))
+;; #'user/a
+
+(while (pos? @a) (do (println @a) (swap! a dec)))
+</code></pre>
 
 
 
