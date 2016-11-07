@@ -1,4 +1,4 @@
-#---
+---
 layout: curriculum
 title: Making a Meal of It
 permalink: /docs/curriculum/making-a-meal-of-it
