@@ -8,20 +8,25 @@ author: jr0cket
 
 Welcome to the curriculum for ClojureBridge.
 
-This curriculum is suitable for those new to programming and you should work through it at your own pace.
+This curriculum is suitable for those new to programming and it will teach you the basics of programming in Clojure.
 
-Existing developers may go through this content more quickly, especially in the sections marked _Easy_.  Or if you have the basics of the Clojure syntax then simply jump straight to the challenges.
+Existing developers may wish to go through this content at a quicker pace, especially the sections marked _Easy_.  Or if you have the basics of the Clojure syntax then you could simply jump straight to the challenges.
 
 
 # Hello Clojure World
 
-Here is a very simple bit of Clojure to get you started.  You can change the code in the top row and as you do so the result of the code changes underneath...
+Here is a very simple bit of Clojure to get you started.  You can change the code in the top row and as you do so the result of the code changes underneath.
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
 (str "Hello" " " "World")
 </code></pre>
 
+We will explore many of the functions like `str` in Clojure which allow us to create a wide range of behaviour in our programs.
+
+Functions are the first thing inside a list, where is list is denoted by `()`.  Everything after the function name is information (arguments) we pass to the function that can change the result.
+
+We will cover the use of functions in much more detail, including defining your own, as we go through the curriculum.
 
 ## The Clojure REPL
 

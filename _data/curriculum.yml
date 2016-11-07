@@ -1,6 +1,6 @@
 - title: Hello Clojure World
   permalink: /docs/curriculum/
-  todo: true
+  todo: false
 
   # Basics of modelling information in Clojure using strings
 - title: Who Am I
