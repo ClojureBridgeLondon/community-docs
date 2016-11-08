@@ -37,6 +37,18 @@
 #   permalink: /docs/curriculum/making-a-meal-of-it
 #   todo: true
 
+## Need to introduce maps before the great clojure bake off
+
+  # Collection - map
+- title: Collection - map
+  permalink: /docs/curriculum/collection-map
+  todo: false
+
+  # Looking up data held in maps
+- title: Looking up values in Maps
+  permalink: /docs/curriculum/looking-up-values-in-maps
+  todo: false
+
   # Defining a meal and recipe to demonstrate how to use collections within collections
 - title: Great Clojure Bake Off
   permalink: /docs/curriculum/great-clojure-bake-off
@@ -45,11 +57,6 @@
  # Changing data held in collections (maps, vectors, lists, etc)
 - title: Changing who you are
   permalink: /docs/curriculum/changing-who-you-are
-  todo: true
-
-  # Looking up data held in maps
-- title: Looking up data in Maps
-  permalink: /docs/curriculum/looking-up-data-in-maps
   todo: true
 
   # Conditional logic, predicates and truthiness
