@@ -10,12 +10,12 @@
   # Basics of modelling information in Clojure using strings
 - title: Whats In A Name
   permalink: /docs/curriculum/whats-in-a-name
-  todo: true
+  todo: false
 
   # Introducing the basics of Clojure Collections
 - title: Clojure Collections Introduction
   permalink: /docs/curriculum/clojure-collections
-  todo: true
+  todo: false
 
     # Basics of modelling information in Clojure using strings
 - title: Who Am I In Detail
@@ -25,7 +25,7 @@
   # Collection - vector
 - title: Collection - Vector
   permalink: /docs/curriculum/collection-vector
-  todo: true
+  todo: false
 
   # Basics of modeling Clojure using the persistent data structures (vectors)
 - title: Who Are We
@@ -33,9 +33,9 @@
   todo: false
 
   # Defining slightly more complex collections - collections within collections
-- title: Making a Meal of it
-  permalink: /docs/curriculum/making-a-meal-of-it
-  todo: true
+# - title: Making a Meal of it
+#   permalink: /docs/curriculum/making-a-meal-of-it
+#   todo: true
 
   # Defining a meal and recipe to demonstrate how to use collections within collections
 - title: Great Clojure Bake Off
