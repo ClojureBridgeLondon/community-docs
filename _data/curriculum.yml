@@ -65,7 +65,7 @@
 # The basics of defining your own functions
 - title: On Your Best Behaviour
   permalink: /docs/curriculum/on-your-best-behaviour
-  todo: true
+  todo: false
 
   # The basics of mathematical functions in Clojure
 - title: The Numbers Do Add Up
