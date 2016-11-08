@@ -40,7 +40,7 @@
   # Defining a meal and recipe to demonstrate how to use collections within collections
 - title: Great Clojure Bake Off
   permalink: /docs/curriculum/great-clojure-bake-off
-  todo: true
+  todo: false
 
  # Changing data held in collections (maps, vectors, lists, etc)
 - title: Changing who you are
@@ -57,7 +57,12 @@
   permalink: /docs/curriculum/making-decisions
   todo: true
 
- # The basics of defining your own functions
+  # Challenge to create a triple lock
+- title: Triple Lock
+  permalink: /docs/curriculum/triple-lock
+  todo: false
+
+# The basics of defining your own functions
 - title: On Your Best Behaviour
   permalink: /docs/curriculum/on-your-best-behaviour
   todo: true
