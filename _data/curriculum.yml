@@ -30,7 +30,7 @@
   # Basics of modeling Clojure using the persistent data structures (vectors)
 - title: Who Are We
   permalink: /docs/curriculum/who-are-we
-  todo: true
+  todo: false
 
   # Defining slightly more complex collections - collections within collections
 - title: Making a Meal of it
