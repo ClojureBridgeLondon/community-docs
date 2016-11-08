@@ -11,7 +11,7 @@ In this section you will learn about assigning (binding) names to values.
 We will introduce the following functions for the first time:
 
 | `def`    | assign a name to a value (a value being a number, string, collection or function) |
-| `str`    | join the arguments together to form one string                                    |
+| `str`    | join values together to form a single string                                      |
 
 <hr />
 

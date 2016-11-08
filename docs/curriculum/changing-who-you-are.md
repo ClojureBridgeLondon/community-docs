@@ -16,11 +16,9 @@ We will also introduce the following functions for the first time:
 
 * `defn` - assign a name to a function
 
-
 <hr />
 
-
-
+> FIXME: The following should be a section on simple maths
 
 ## Simple addition
 

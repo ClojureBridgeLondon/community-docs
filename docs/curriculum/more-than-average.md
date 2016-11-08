@@ -6,7 +6,7 @@ level: easy
 author: jr0cket
 ---
 
-> FIXME: This section could be written better and made more practical rather than tutorial.  It is meant to be a pre-cursor to split the bill, which is a challenge that uses many of these examples to complete.  I think it probably goes to deep and covers too many functions.
+> FIXME: This section goes quite deep into working with collections, add a section before this that is average and make this one intermediate.  It is meant to be a pre-cursor to split the bill, which is a challenge that uses many of these examples to complete.  I think it probably goes to deep and covers too many functions.
 
 In this section we will introduce fuctions that help you work with collections in Clojure.
 
@@ -57,6 +57,8 @@ When we have several maps in a vector, we need to iterate over each map and extr
 Neither of these expressions are correct because they call the get function incorrectly.
 
 ~~~klipse
+;; These examples fail
+
 ;; (map get [{:angle 30} {:angle 90} {:angle 50}] :angle)
 ;; (map get :angle [{:angle 30} {:angle 90} {:angle 50}])
 ~~~
@@ -75,6 +77,10 @@ For the exercise we use partial with the :angle keyword, which is passed each ma
 
 ~~~klipse
 (map (partial :angle) [{:angle 30} {:angle 90} {:angle 50}])
+
+;; Alternative examples
+;; (map #(get % :angle) [{:angle 30} {:angle 90} {:angle 50}] )
+;; (map :angle [{:angle 30} {:angle 90} {:angle 50}])
 ~~~
 
 Now we can get all the values returned in a collection, we need to add them.  If we want to take all the values in a collection and get a single value then you can use the reduce function.

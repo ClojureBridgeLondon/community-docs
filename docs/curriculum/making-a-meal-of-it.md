@@ -6,7 +6,6 @@ level: easy
 author: jr0cket
 ---
 
-Lets be a little introspective and represent ourselves and other groups of things in Clojure code
 
 In this section you will learn about collections, such as _string_, _vector_ and _map_.  We will also introduce the following functions for the first time:
 
