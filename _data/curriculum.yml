@@ -44,6 +44,11 @@
   permalink: /docs/curriculum/collection-map
   todo: false
 
+  # Challenge to define the team using maps (and mix maps with vectors)
+- title: We Are Groot
+  permalink: /docs/curriculum/we-are-groot
+  todo: false
+
   # Looking up data held in maps
 - title: Looking up values in Maps
   permalink: /docs/curriculum/looking-up-values-in-maps
