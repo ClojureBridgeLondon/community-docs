@@ -59,11 +59,6 @@
   permalink: /docs/curriculum/great-clojure-bake-off
   todo: false
 
- # Changing data held in collections (maps, vectors, lists, etc)
-- title: Changing who you are
-  permalink: /docs/curriculum/changing-who-you-are
-  todo: true
-
   # Conditional logic, predicates and truthiness
 - title: Making Decisions
   permalink: /docs/curriculum/making-decisions
@@ -87,6 +82,11 @@
  # The basics of working with data in collections, preparing for split-the-bill challenge
 - title: Finding Averages
   permalink: /docs/curriculum/finding-averages
+  todo: true
+
+ # Changing data held in collections (maps, vectors, lists, etc)
+- title: Changing who you are
+  permalink: /docs/curriculum/changing-who-you-are
   todo: true
 
   # How to split the bill between all the people at a restaurant, start simple and then allow people to pay for just what they ordered
