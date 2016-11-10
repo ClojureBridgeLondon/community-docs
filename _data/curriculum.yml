@@ -12,6 +12,16 @@
   permalink: /docs/curriculum/whats-in-a-name
   todo: false
 
+  # Conditional logic, predicates and truthiness
+- title: Making Decisions
+  permalink: /docs/curriculum/making-decisions
+  todo: false
+
+  # Let function for local naming, plus cond and case functions
+- title: Lets Not Make Excuses
+  permalink: /docs/curriculum/lets-not-make-excuses
+  todo: false
+
   # Introducing the basics of Clojure Collections
 - title: Clojure Collections Introduction
   permalink: /docs/curriculum/clojure-collections
@@ -58,11 +68,6 @@
 - title: Great Clojure Bake Off
   permalink: /docs/curriculum/great-clojure-bake-off
   todo: false
-
-  # Conditional logic, predicates and truthiness
-- title: Making Decisions
-  permalink: /docs/curriculum/making-decisions
-  todo: true
 
   # Challenge to create a triple lock
 - title: Triple Lock
