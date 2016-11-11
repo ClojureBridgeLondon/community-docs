@@ -22,12 +22,17 @@
   permalink: /docs/curriculum/lets-not-make-excuses
   todo: false
 
+  # Common ways to access documentation and see the source code of functions
+- title: Just The Docs
+  permalink: /docs/curriculum/just-the-docs
+  todo: false
+
   # Introducing the basics of Clojure Collections
 - title: Clojure Collections Introduction
   permalink: /docs/curriculum/clojure-collections
   todo: false
 
-    # Basics of modelling information in Clojure using strings
+  # Basics of modelling information in Clojure using strings
 - title: Who Am I In Detail
   permalink: /docs/curriculum/who-am-i-in-detail
   todo: true
