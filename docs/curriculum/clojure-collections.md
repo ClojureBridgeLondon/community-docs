@@ -46,4 +46,11 @@ The functions `get` and `get-in` will get value that are paired with the given v
 
 ## Differences between Collections
 
-In almost all contexts, you can consider vectors, lists, and other sequences as interchangeable. They only differ in their performance characteristics, and in a few data-structure-specific operations.
+In almost all contexts, you can consider vectors, lists, and other sequences as interchangeable. They only differ in their performance characteristics and in a few data-structure-specific operations.
+
+You can also consider lists and vectors equal if they have the same values in them.  For example:
+
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
+(= (list 1 2 3 4) (vector 1 2 3 4))
+</code></pre>
