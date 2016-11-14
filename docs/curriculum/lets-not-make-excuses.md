@@ -37,7 +37,9 @@ So far we have made a "true or false" decision using the `if statement`.  With t
 
 We need to have some value to check in the `cond` function, so either a name defined by `def` or `let` can be used.
 
-```
+
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
 (let [sleepy "maybe"]
   (cond
     (= sleepy "no")    "Lets code some more..."
@@ -45,7 +47,7 @@ We need to have some value to check in the `cond` function, so either a name def
     (= sleepy "yawn")  "Time for a brisk walk"
     (= sleepy "zzzz")  "Drink some coffee or a nice cup of tea"
     :else "You must be asleep"))
-```
+</code></pre>
 
 
 ## Homework Excuse Generator
@@ -80,21 +82,24 @@ In our example, we have joined an international company and we want our code to 
 
 **Try changing the value for greeting to another language.  Add some more language greetings if you like**
 
-~~~klipse
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+
+<pre><code class="language-klipse" data-eval-context="expr">
 (let [greeting :fr]
   (case greeting
     :fr "bonjour monde clojure"
     :en "hello clojure world"
     :it "ciao mondo clojure"
     :es "hola mundo clojure"))
-~~~
+</code></pre>
 
 
 Now lets also decide if we want to return the message in uppercase.  We will change our code around a little first though.  We will define a name called language to hold the keyword for the language we want to use.  Then we will define the message we want to return, using the `case` function.  Finally we will decide whether to convert the message to uppercase characters.
 
 **Try changing the value of `upper-case?` to `false` and changing the language value**
 
-~~~klipse
+<!-- Using expression evaluation fix to make string appear as a value in klipse -->
+<pre><code class="language-klipse" data-eval-context="expr">
 (let [language :fr
       message (case language
                 :fr "bonjour monde clojure"
@@ -105,4 +110,5 @@ Now lets also decide if we want to return the message in uppercase.  We will cha
   (if upper-case?
     (clojure.string/upper-case message)
     message))
-~~~
+</code></pre>
+
