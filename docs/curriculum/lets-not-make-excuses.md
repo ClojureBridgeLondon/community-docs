@@ -35,8 +35,9 @@ In our previous making decisions examples using the `if` function, we could have
 
 So far we have made a "true or false" decision using the `if statement`.  With the `cond` function you can make a decision based on the value of a condition.  Which ever condition matches, its associated expression will be evaluated and returned.
 
-We need to have some value to check in the `cond` function, so either a name defined by `def` or `let` can be used.
+The `cond` function returns the answer based on the first matching condition it finds.  Each condition will return either true or false.  The first condition to return true will return its associated answer.
 
+We need to have some value to check in the `cond` function, so either a name defined by `def` or `let` can be used.
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
@@ -52,23 +53,27 @@ We need to have some value to check in the `cond` function, so either a name def
 
 ## Homework Excuse Generator
 
-We can create a simple excuses generator that will return a suitable excuse based on the reason we specify.
+**Create a simple excuses generator that will return a suitable excuse based on the reason specified**
+
+Fill in the following code, especially where there are `,,,` characters.
+
+
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
-(let [reason "sick"]
+(let [reason ,,,]
   (cond
-    (= reason "sick")      "I see green elephant-shaped spots"
-    (= reason "train")     "The train drivers are on strike again"
-    (= reason "compliing") "My code is still compiling..."
-    (= reason "pet")       "My pet ate my laptop"))
+    (= reason ,,, )      "I see green elephant-shaped spots"
+    ,,, 
+    ))
 </code></pre>
 
 
-In this example we are creating a local _name_ using the `let` funciton.  The `let` function assigns the name to the value we specify, in this example the reason we want the excuse for.
+Suggested approach
+* create a local _name_ using the `let` function for the value of reason
+* Use `cond` to match the reason with the different excuses you want to generate
 
-The `cond` function returns the answer based on the first matching condition it finds.  Each condition will return either true or false.  The first condition to return true will return its associated answer.
-
+Once you have tried to solve this exercise, take a look at the [suggested example](https://gist.github.com/09296ae4ff98d48f4a6a729fc479219f)
 
 > Note: This example could have also used the `def` function to assign the name `reason` to the value of the excuse, eg. "sick".  The main difference is that the name assignment only works within the `let` function, meaning that once the closing bracket `)` of the `let` function is reached then the name `reason` can no longer be used.
 
@@ -80,7 +85,7 @@ The `case` function is slightly simpler version of the `cond` funciton, simply r
 
 In our example, we have joined an international company and we want our code to speak a few different languages.  Lets set the language we want to greet people in and return the appropriate message.
 
-**Try changing the value for greeting to another language.  Add some more language greetings if you like**
+**Add different greetings in other languages**
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 
@@ -88,11 +93,13 @@ In our example, we have joined an international company and we want our code to 
 (let [greeting :fr]
   (case greeting
     :fr "bonjour monde clojure"
-    :en "hello clojure world"
-    :it "ciao mondo clojure"
-    :es "hola mundo clojure"))
+    ,,,
+     ))
 </code></pre>
 
+In Italian you would say `"ciao mondo clojure"` or in Spanish you could say `"hola mundo clojure"`.
+
+Once you have tried to solve the challgenge, see the [suggested example](https://gist.github.com/e72a6ffc416d3d0a609e4782f3a6b90e).
 
 Now lets also decide if we want to return the message in uppercase.  We will change our code around a little first though.  We will define a name called language to hold the keyword for the language we want to use.  Then we will define the message we want to return, using the `case` function.  Finally we will decide whether to convert the message to uppercase characters.
 
