@@ -66,7 +66,7 @@ Fill in the following code, especially where there are `,,,` characters.
 (let [reason ,,,]
   (cond
     (= reason ,,, )      "I see green elephant-shaped spots"
-    ,,, 
+    ,,,
     ))
 </code></pre>
 
@@ -82,6 +82,8 @@ Once you have tried to solve this exercise, take a look at the [suggested exampl
 
 
 ## Bonjour Clojure with `case`
+
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" />
 
 The `case` function is slightly simpler version of the `cond` funciton, simply returning an expression based on which value matches the case.
 
@@ -101,7 +103,13 @@ In our example, we have joined an international company and we want our code to 
 
 In Italian you would say `"ciao mondo clojure"` or in Spanish you could say `"hola mundo clojure"`.
 
-Once you have tried to solve the challgenge, see the [suggested example](https://gist.github.com/e72a6ffc416d3d0a609e4782f3a6b90e).
+Once you have tried to solve the challenge, see the [suggested example](https://gist.github.com/e72a6ffc416d3d0a609e4782f3a6b90e).
+
+
+
+## Bonus challenge
+
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" />
 
 Now lets also decide if we want to return the message in uppercase.  We will change our code around a little first though.  We will define a name called language to hold the keyword for the language we want to use.  Then we will define the message we want to return, using the `case` function.  Finally we will decide whether to convert the message to uppercase characters.
 
@@ -112,12 +120,12 @@ Now lets also decide if we want to return the message in uppercase.  We will cha
 (let [language :fr
       message (case language
                 :fr "bonjour monde clojure"
-                :en "hello clojure world"
-                :it "ciao mondo clojure"
-                :es "hola mundo clojure")
+                ,,, )
       upper-case? true]
   (if upper-case?
     (clojure.string/upper-case message)
     message))
 </code></pre>
 
+
+[suggested example](https://gist.github.com/20f261d70edc3895e5378afff16a7137)
