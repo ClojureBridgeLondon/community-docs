@@ -53,6 +53,8 @@ We need to have some value to check in the `cond` function, so either a name def
 
 ## Homework Excuse Generator
 
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" />
+
 **Create a simple excuses generator that will return a suitable excuse based on the reason specified**
 
 Fill in the following code, especially where there are `,,,` characters.
