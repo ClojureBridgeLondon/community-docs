@@ -20,10 +20,15 @@ Lets look at the simplest possible way you could write some information about yo
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
-"John Stevenson, age 21, height 6ft4, blue eyes, dark and brooding"
+"John Stevenson, age 21, height 6ft4, blue eyes, hobbies include Clojure"
 </code></pre>
 
-**Write a brief description of yourself (it can be made up)**
+
+**Write a brief description of yourself**
+
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
+
+Using a string, define yourself by including details such as name, age, eye colour and hobbies.  None of this information has to be true.
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
