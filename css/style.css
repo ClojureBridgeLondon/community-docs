@@ -39,3 +39,9 @@ blockquote p {
   font-size: 0.96em;
   font-style: italic;
 }
+
+/* Float challenges logos to the right of text */
+img.mini-challenge{
+    margin: 0px 0px 15px 15px;
+    float: right;
+}

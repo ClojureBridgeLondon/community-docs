@@ -53,7 +53,7 @@ We need to have some value to check in the `cond` function, so either a name def
 
 ## Homework Excuse Generator
 
-<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" />
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
 
 **Create a simple excuses generator that will return a suitable excuse based on the reason specified**
 
@@ -83,7 +83,7 @@ Once you have tried to solve this exercise, take a look at the [suggested exampl
 
 ## Bonjour Clojure with `case`
 
-<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" />
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
 
 The `case` function is slightly simpler version of the `cond` funciton, simply returning an expression based on which value matches the case.
 
@@ -106,10 +106,9 @@ In Italian you would say `"ciao mondo clojure"` or in Spanish you could say `"ho
 Once you have tried to solve the challenge, see the [suggested example](https://gist.github.com/e72a6ffc416d3d0a609e4782f3a6b90e).
 
 
-
 ## Bonus challenge
 
-<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" />
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
 
 Now lets also decide if we want to return the message in uppercase.  We will change our code around a little first though.  We will define a name called language to hold the keyword for the language we want to use.  Then we will define the message we want to return, using the `case` function.  Finally we will decide whether to convert the message to uppercase characters.
 
