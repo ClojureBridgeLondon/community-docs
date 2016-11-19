@@ -30,17 +30,18 @@ A condition can be a simple value, like `true` or `false`, or it can be the resu
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
-(= 1 1)
 ;; (= "Hello" "Clojure")
 ;; (< 3 4)
 ;; (> 3 4)
 ;; (odd? 3)
 ;; (even? 7)
+(= 1 1)
 </code></pre>
 
 
-
 ## Am I sleepy
+
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
 
 We are going to start with the assumption that you are sleepy, it is a Saturday morning after all.  If you are sleepy, then you could get a nice cup of tea or coffee.  If you are wide awake then you can start coding.
 
@@ -60,5 +61,3 @@ Then use the `if` function to test if we are sleepy, returning a string suggesti
 Change the value of `sleepy` to see what does the code tell us to do...
 
 See the [suggested example](https://gist.github.com/jr0cket/46666ac40070da1e988f980858354554)
-
-
