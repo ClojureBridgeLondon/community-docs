@@ -55,15 +55,7 @@ Using the `get` function we can pull out more specific values from the map.  We 
 
 ## A more detailed collection
 
-<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
-
-In the previous example the key we use to get values from a map was at the top level, ie. it is not nested in another map.
-
-If we want to get a nested value we can use a variation of the `get` function called `get-in`.  The `get-in` function takes the map and a vector of keys.
-
-`(get-in map [keys])`
-
-Here is an example of a more detailed collection, where the values in the map are sometimes maps themselves
+Here is an example of a more detailed collection, where some of the values in the map are maps themselves.  So instead of `{key value}` we have `{key {key value}}` or even `{key (key {key value})}`.
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
@@ -76,6 +68,18 @@ Here is an example of a more detailed collection, where the values in the map ar
 
 starwars-collection
 </code></pre>
+
+> Hint: You may have noticed that the values are actually a vector of values.  We can use any collection as our value.
+
+## Getting values from nested maps
+
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
+
+In the previous example the key we use to get values from a map was at the top level, ie. it is not nested in another map.
+
+If we want to get a nested value we can use a variation of the `get` function called `get-in`.  The `get-in` function takes the map and a vector of keys.
+
+`(get-in map [keys])`
 
 
 **Get all the jedi characters**
