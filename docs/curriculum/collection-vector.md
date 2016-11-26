@@ -70,16 +70,31 @@ The function `count` will return the number of values in a collection.
 </code></pre>
 
 
-### Adding values to a vector
+## Adding values to a vector
 
-Using the `conj` function on a vector adds a value to the end, not the start
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
+
+The `conj` function will join new values to a vector.  `conj` is short for conjoin and when adding vales to a vector they are placed at the end of the collection.
+
+Are we changing the vector?  Try the following code and see...
+
+```
+(conj [1 2 3] 4)
+(conj ["Can" "we" "join"] ["two" "collections"])
+(conj ["Can" "we" "join"] "multiple" "values")
+
+(def favourite-ice-cream-flavors ["Mint" "Vanilla"])
+(conj favourite-ice-cream-flavors "Chocolate")
+favourite-ice-cream-flavors
+```
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
-(conj [1 2 3] 4)
+
 </code></pre>
 
-> FIXME: move adding values to a vector to a separate section
+> Hint: The `conj` function works with all collection types (list, vector, map, set).
+
 
 ## Vectors are equal when values are equal
 
