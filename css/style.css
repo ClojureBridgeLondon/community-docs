@@ -45,3 +45,10 @@ img.mini-challenge{
     margin: 0px 0px 15px 15px;
     float: right;
 }
+
+/* Float challenges logos in the centre */
+img.challenge{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

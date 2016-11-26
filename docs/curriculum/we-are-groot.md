@@ -6,6 +6,8 @@ level: easy
 author: jr0cket
 ---
 
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-challenge-48.png" class="challenge" />
+
 Here are some challenges to see what you have learned so far about Collection types _map_ and _vector_.
 
 Define information about the group you are in using a _map_, using Clojure _keywords_ as the keys of the map and strings or numbers for the values.
@@ -20,7 +22,7 @@ Remember that a valid map must have a key and a value as a pair.  You can have m
 **Create a map to define one member of your study group - including name, age, clojure-skills**
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
-<pre><code class="language-klipse" data-eval-context="expr">
+<pre><code class="language-klipse">
 ()
 </code></pre>
 
@@ -28,7 +30,7 @@ Remember that a valid map must have a key and a value as a pair.  You can have m
 **Use a map to define your study group's members, where the members can be a vector of maps or have a unique name**
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
-<pre><code class="language-klipse" data-eval-context="expr">
+<pre><code class="language-klipse">
 ()
 </code></pre>
 
