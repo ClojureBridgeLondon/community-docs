@@ -30,6 +30,8 @@ my-name
 
 ## So who are we?
 
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
+
 We can use a Clojure collection to hold lots of values about the group we are in.
 
 **Define the group you are in and give that group a name**
@@ -41,7 +43,9 @@ We can use a Clojure collection to hold lots of values about the group we are in
 
 Here is a [suggested example](https://gist.github.com/6df8022aee312da586ca5561c3bc9baa) with a fictitious group
 
-### Nesting Collections
+## Nesting Collections
+
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
 
 As we already defined `my-name` as a name that points to my full name, we can use `my-name` as part of the collection for `my-group`
 
