@@ -6,8 +6,6 @@ level: easy
 author: jr0cket
 ---
 
-<img src="{{ site.baseurl }}/img/clojurebridgelondon-challenge-48.png" class="challenge" />
-
 Here are some challenges to see what you have learned so far about Collection types _map_ and _vector_.
 
 Define information about the group you are in using a _map_, using Clojure _keywords_ as the keys of the map and strings or numbers for the values.
@@ -16,6 +14,7 @@ Remember that a valid map must have a key and a value as a pair.  You can have m
 
 <hr />
 
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-challenge-48.png" class="challenge" />
 
 ## Define a team member 
 
