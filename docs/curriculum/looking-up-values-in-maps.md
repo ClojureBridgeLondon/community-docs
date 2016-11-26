@@ -6,8 +6,6 @@ level: easy
 author: jr0cket
 ---
 
-We have created several collections already, but how do we use the information in those collections.  Howe do we pull out just the specific parts parts we want from those collections.  We will answer these questins in this section
-
 In this section you will learn more about the functions that can be used to access data in collections, specifically in _maps_.  We will also introduce the following functions for the first time:
 
 | `get`, `get-in` | get values from a collection based on a key |
@@ -36,6 +34,8 @@ starwars-characters
 
 ## Finding information in maps
 
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
+
 Using the `get` function we can pull out more specific values from the map.  We give the `get` function the map we want to extract a value from and the key that is paired with the value.
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
@@ -54,6 +54,8 @@ Using the `get` function we can pull out more specific values from the map.  We 
 
 
 ## A more detailed collection
+
+<img src="{{ site.baseurl }}/img/clojurebridgelondon-mini-challenge.png" class="mini-challenge" />
 
 In the previous example the key we use to get values from a map was at the top level, ie. it is not nested in another map.
 
