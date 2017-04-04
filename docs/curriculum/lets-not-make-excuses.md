@@ -6,7 +6,7 @@ level: easy
 author: jr0cket
 ---
 
-We can Making decisions is an common part of writing code, so in this section we will cover functions in Clojure that help us take decisions.
+Making decisions is an common part of writing code, so in this section we will cover functions in Clojure that help us take decisions.
 
 You will be introduced to the following functions for the first time:
 
