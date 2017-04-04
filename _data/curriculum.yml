@@ -135,6 +135,10 @@
   todo: true
 
   # Introducing mutable state
+- title: Mutants arise
+  permalink: /docs/curriculum/mutants-arise
+  todo: true
+
 
   # Examples of the Ration type and delaying calculations until you know the precision you want
 - title: A Piece of Pie
