@@ -126,3 +126,10 @@
 
   # Introducing mutable state
 
+  # Examples of the Ration type and delaying calculations until you know the precision you want
+- title: A Piece of Pie
+  permalink: /docs/curriculum/a-piece-of-pie
+  todo: true
+
+  # Examples of lazy evaluation
+
