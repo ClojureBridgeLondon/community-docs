@@ -114,6 +114,11 @@
   permalink: /docs/curriculum/strictly-clojure
   todo: true
 
+  # Challenge based around maps and assoc
+- title: Are you local?
+  permalink: /docs/curriculum/are-you-local
+  todo: true
+
   # Finding patterns in collections (pre-cursor to most common word challenge)
 - title: Finding Patterns
   permalink: /docs/curriculum/finding-patterns
