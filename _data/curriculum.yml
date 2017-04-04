@@ -104,6 +104,11 @@
   permalink: /docs/curriculum/split-the-bill
   todo: true
 
+ # Processing data based on decisions
+- title: I like my Clojure Filtered
+  permalink: /docs/curriculum/i-like-my-clojure-filtered
+  todo: true
+
   # Intermediate examples of Clojure functions and working with maps
 - title: More Than Average
   permalink: /docs/curriculum/more-than-average
