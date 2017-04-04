@@ -18,6 +18,8 @@ In this section you will learn more about the functions that can be used to acce
 
 We have seen in previous sections how maps can be used to create a much more involved structure to your information, allowing you to represent much more complex things.
 
+Here is an example of a more detailed collection, where some of the values in the map are maps themselves.  So instead of `{key value}` we have `{key {key value}}` or even `{key (key {key value})}`.
+
 In this example we model someones very basic Star Wars collection.
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
@@ -55,7 +57,7 @@ Using the `get` function we can pull out more specific values from the map.  We 
 
 ## A more detailed collection
 
-Here is an example of a more detailed collection, where some of the values in the map are maps themselves.  So instead of `{key value}` we have `{key {key value}}` or even `{key (key {key value})}`.
+We want to add ships to our collection, so we have refactored our map to have `:characters`
 
 <!-- Using expression evaluation fix to make string appear as a value in klipse -->
 <pre><code class="language-klipse" data-eval-context="expr">
