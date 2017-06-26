@@ -139,6 +139,10 @@
   permalink: /docs/curriculum/mutants-arise
   todo: true
 
+  # Challenge using atoms and refs to help students understand mutable state
+- title: Gambling Addiction
+  permalink: /docs/curriculum/gambling-addiction
+  todo: true
 
   # Examples of the Ration type and delaying calculations until you know the precision you want
 - title: A Piece of Pie
@@ -146,4 +150,18 @@
   todo: true
 
   # Examples of lazy evaluation
+- title: Keep Calm and stay lazy
+  permalink: /docs/curriculum/keep-calm-and-stay-lazy
+  todo: true
 
+
+# Other topics
+## Ratio types - dont count your chickens
+
+# Advanced stuff...
+
+# Its all types underneath - show that Clojure is built on some of the types of the hosted platform and things have a type, you just dont need to explicitly define them.
+
+# Specifying with tests (eg. clojure.test - not sure if clojure.spec is supported with klipse)
+
+# Something to demonstration the use of Java [optional]
